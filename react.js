@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'lskjs/js',
+    "@lskjs/eslint-config/js",
     'plugin:react/recommended',
   ],
   rules: {
