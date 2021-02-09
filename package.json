@@ -1,10 +1,10 @@
 {
-  "version": "0.2.0",
-  "name": "eslint-config-lskjs",
-  "description": "LSK.js – eslint config",
+  "version": "2.0.0",
+  "name": "@lskjs/eslint-config",
+  "description": "Eslint preset for LSK.js projects",
   "author": "Igor Suvorov <hi@isuvorov.com>",
   "license": "MIT",
-  "repository": "https://github.com/lskjs/eslint",
+  "repository": "https://github.com/lskjs/eslint-config",
   "keywords": [
     "eslint",
     "config",
