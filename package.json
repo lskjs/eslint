@@ -13,7 +13,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "npm version minor && npm publish"
+    "release": "npm version minor && npm publish",
+    "lint:js": "eslint . --ext .js && prettier --write --plugin-search-dir=.",
+    "lint:js:fix": "eslint . --ext .js --fix && prettier --write --plugin-search-dir=."
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "4.14.2",
