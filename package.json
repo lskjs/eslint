@@ -1,0 +1,32 @@
+{
+  "version": "0.0.1",
+  "name": "eslint-config-lskjs",
+  "description": "LSK.js – eslint config",
+  "author": "Igor Suvorov <hi@isuvorov.com>",
+  "license": "MIT",
+  "repository": "https://github.com/lskjs/eslint",
+  "keywords": [
+    "eslint",
+    "config",
+    "lskjs"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm version minor && npm publish"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "4.14.2",
+    "@typescript-eslint/parser": "4.14.2",
+    "eslint": "7.19.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-import-resolver-typescript": "2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "prettier": "2.2.1"
+  }
+}
