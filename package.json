@@ -18,17 +18,17 @@
     "lint:js:fix": "eslint . --ext .js --fix && prettier --write --plugin-search-dir=."
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "4.14.2",
-    "@typescript-eslint/parser": "4.14.2",
-    "eslint": "7.19.0",
+    "@typescript-eslint/eslint-plugin": "4.29.1",
+    "@typescript-eslint/parser": "4.29.1",
+    "eslint": "7.32.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-airbnb-base": "14.2.1",
-    "eslint-config-prettier": "7.2.0",
-    "eslint-import-resolver-typescript": "2.3.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "3.3.1",
-    "eslint-plugin-react": "7.22.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-typescript": "2.4.0",
+    "eslint-plugin-import": "2.24.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-react": "7.24.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "prettier": "2.2.1"
+    "prettier": "2.3.2"
   }
 }
