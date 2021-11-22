@@ -26,6 +26,7 @@ module.exports = {
     'func-names': 'off',
     'no-underscore-dangle': 'off',
     'no-throw-literal': 'off',
+    quotes: ['error', 'single'],
   
     // imports
     'import/extensions': ['error', 'ignorePackages', { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }],
