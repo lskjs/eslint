@@ -19,13 +19,14 @@ module.exports = {
         ignoreComments: true,
       },
     ],
-    'prettier/prettier': 'warn',
     'class-methods-use-this': 'off',
     'global-require': 'off',
     'lines-between-class-members': 'off',
     'func-names': 'off',
     'no-underscore-dangle': 'off',
     'no-throw-literal': 'off',
+
+    'prettier/prettier': ['warn', { "singleQuote": true }],
     quotes: ['error', 'single'],
   
     // imports
