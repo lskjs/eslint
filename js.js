@@ -27,7 +27,6 @@ module.exports = {
     'no-throw-literal': 'off',
 
     'prettier/prettier': ['warn', { "singleQuote": true }],
-    quotes: ['error', 'single'],
   
     // imports
     'import/extensions': ['error', 'ignorePackages', { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }],
