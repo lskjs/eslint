@@ -25,6 +25,7 @@ module.exports = {
     'func-names': 'off',
     'no-underscore-dangle': 'off',
     'no-throw-literal': 'off',
+    'no-plusplus': 'off',
 
     'prettier/prettier': ['warn', { "singleQuote": true }],
   
@@ -34,6 +35,8 @@ module.exports = {
       'error',
       { devDependencies: false, optionalDependencies: true, peerDependencies: true },
     ],
+    'import/prefer-default-export': 'off',
+
     // its for orders
     'import/order': 'off',
     'sort-imports': 'off',
