@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    '@lskjs/eslint-config/react',
+    './react',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],

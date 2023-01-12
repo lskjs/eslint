@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['@lskjs/eslint-config/js', 'plugin:react/recommended'],
+  extends: ['./js', 'plugin:react/recommended'],
   rules: {
     // React
     'react/prop-types': 'error',

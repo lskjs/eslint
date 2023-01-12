@@ -4,7 +4,7 @@ module.exports = {
     node: true,
   },
   extends: ['airbnb-base', 'prettier'],
-  plugins: ['simple-import-sort', 'prettier', 'plugin:json/recommended'],
+  plugins: ['simple-import-sort', 'prettier', 'json'],
   rules: {
     'max-len': [
       'error',
