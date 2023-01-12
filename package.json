@@ -1,22 +1,12 @@
 {
-  "version": "2.16.0",
   "name": "@lskjs/eslint-config",
+  "version": "2.16.0",
   "description": "Eslint preset for LSK.js projects",
-  "author": "Igor Suvorov <hi@isuvorov.com>",
-  "license": "MIT",
-  "repository": "https://github.com/lskjs/eslint-config",
-  "keywords": [
-    "eslint",
-    "config",
-    "lskjs"
-  ],
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "      eslint . --ext .js,json        ",
+    "lint:fix": "  eslint . --ext .js,json  --fix ",
     "release": "npm version minor -m \"chore(release): v%s\" && npm publish",
-    "lint:js": "eslint . --ext .js  && prettier --write --plugin-search-dir=.",
-    "lint:json": "eslint . --ext .json  && prettier --write --plugin-search-dir=.",
-    "lint:js:fix": "eslint . --ext .js  --fix && prettier --write --plugin-search-dir=."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.48.1",
@@ -28,6 +18,7 @@
     "eslint-import-resolver-typescript": "3.5.3",
     "eslint-plugin-import": "2.27.4",
     "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.0",
@@ -38,6 +29,15 @@
   "optionalDependencies": {
     "typescript": "4.*.*"
   },
+  "main": "index.js",
+  "repository": "https://github.com/lskjs/eslint-config",
+  "author": "Igor Suvorov <hi@isuvorov.com>",
+  "keywords": [
+    "eslint",
+    "config",
+    "lskjs"
+  ],
+  "license": "MIT",
   "eslintConfig": {
     "extends": "./index.js"
   }
