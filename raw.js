@@ -14,18 +14,25 @@ const jsRules = {
   'no-underscore-dangle': 'off',
   'no-throw-literal': 'off',
 
-
   // imports
-  'import/extensions': ['error', 'ignorePackages', { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }],
+  'import/extensions': [
+    'error',
+    'ignorePackages',
+    { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' },
+  ],
   'import/no-extraneous-dependencies': [
     'error',
-    { devDependencies: false, optionalDependencies: true, peerDependencies: true },
+    {
+      devDependencies: false,
+      optionalDependencies: true,
+      peerDependencies: true,
+    },
   ],
   // its for orders
   'import/order': 'off',
   'sort-imports': 'off',
   'simple-import-sort/imports': 'error',
-}
+};
 const jsConfig = {
   env: {
     browser: false,
@@ -38,7 +45,7 @@ const jsConfig = {
     'plugin:prettier',
   ],
   rules: jsRules,
-}
+};
 
 const reactRules = {
   // React
@@ -53,19 +60,15 @@ const reactRules = {
       extensions: ['.jsx', '.tsx'],
     },
   ],
-}
+};
 const reactConfig = {
   ...jsConfig,
-  extends: [
-    ...jsConfig.extends,
-    'plugin:react/recommended',
-  ],
+  extends: [...jsConfig.extends, 'plugin:react/recommended'],
   rules: {
     ...jsConfig.rules,
-    ...reactRules
+    ...reactRules,
   },
-}
-
+};
 
 const tsRules = {
   // its fix
@@ -92,7 +95,6 @@ const tsRules = {
   ],
 };
 
-
 const tsConfig = {
   ...reactConfig,
   extends: [
@@ -118,21 +120,21 @@ const tsConfig = {
   rules: {
     ...jsRules,
     ...reactRules,
-    ...tsRules
+    ...tsRules,
   },
   overrides: [
     {
       files: ['*.js', '*.jsx'],
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
-      }
+      },
     },
   ],
   configs: {
     js: {
-      rules: jsRules
-    }
-  }
+      rules: jsRules,
+    },
+  },
 };
 
 module.exports = {
@@ -141,8 +143,8 @@ module.exports = {
     js: jsConfig,
     react: reactConfig,
     ts: tsConfig,
-  }
-}
+  },
+};
 
 // TODO: разобрать
 // rules: {

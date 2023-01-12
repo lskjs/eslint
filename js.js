@@ -3,14 +3,8 @@ module.exports = {
     browser: false,
     node: true,
   },
-  extends: [
-    'airbnb-base',
-    'prettier',
-  ],
-  plugins: [
-    'simple-import-sort',
-    'prettier',
-  ],
+  extends: ['airbnb-base', 'prettier'],
+  plugins: ['simple-import-sort', 'prettier', 'plugin:json/recommended'],
   rules: {
     'max-len': [
       'error',
@@ -27,13 +21,21 @@ module.exports = {
     'no-throw-literal': 'off',
     'no-plusplus': 'off',
 
-    'prettier/prettier': ['warn', { "singleQuote": true }],
-  
+    'prettier/prettier': ['warn', { singleQuote: true }],
+
     // imports
-    'import/extensions': ['error', 'ignorePackages', { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' },
+    ],
     'import/no-extraneous-dependencies': [
       'error',
-      { devDependencies: false, optionalDependencies: true, peerDependencies: true },
+      {
+        devDependencies: false,
+        optionalDependencies: true,
+        peerDependencies: true,
+      },
     ],
     'import/prefer-default-export': 'off',
 
@@ -41,5 +43,5 @@ module.exports = {
     'import/order': 'off',
     'sort-imports': 'off',
     'simple-import-sort/imports': 'error',
-  }
-}
+  },
+};

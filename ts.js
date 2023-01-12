@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    "@lskjs/eslint-config/react",
+    '@lskjs/eslint-config/react',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -27,7 +27,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error'],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
-  
+
     // ts
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
@@ -50,7 +50,7 @@ module.exports = {
       files: ['*.js', '*.jsx'],
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
-      }
+      },
     },
   ],
 };
