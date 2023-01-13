@@ -5,6 +5,15 @@ module.exports = {
   },
   extends: ['airbnb-base', 'prettier'],
   plugins: ['simple-import-sort', 'prettier', 'json-format'],
+  ignorePatterns: [
+    '**/node_modules/**',
+    '**/__*/**',
+    '**/lib/**',
+    '**/dist/**',
+    '**/build/**',
+    '**/coverage/**',
+    '**/public/**',
+  ],
   rules: {
     'max-len': [
       'error',
