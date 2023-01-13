@@ -13,6 +13,7 @@ module.exports = {
     '**/build/**',
     '**/coverage/**',
     '**/public/**',
+    '!.gitlab-ci.js',
   ],
   rules: {
     'max-len': [
